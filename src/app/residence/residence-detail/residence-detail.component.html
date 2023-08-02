@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <div class="card" *ngIf="residence$ | async as residence">
+    <div class="card-header text-white bg-info">
+      {{ residence.residenceName | uppercase }}
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row mb-5">
+            <div class="col-md-4">Nom:</div>
+            <div class="col-md-8">{{ residence.residenceName }}</div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-md-4">Description:</div>
+            <div class="col-md-8">{{ residence.description }}</div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-4">Prix:</div>
+            <div class="col-md-8">
+              {{
+                residence.price
+                  | currency: "EUR":"symbol":"1.2-2":"fr"
+
+              }}
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <img
+            [src]="residence.imageUrl"
+            [title]="residence.residenceName | uppercase"
+            [alt]="residence.residenceName"
+            class="card-img-top"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <button class="btn btn-outline-info d-flex" (click)="backToList()">
+        <span class="material-icons"> keyboard_arrow_left </span>
+        Retour à la liste
+      </button>
+    </div>
+  </div>
+</div>

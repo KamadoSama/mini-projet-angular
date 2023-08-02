@@ -1,0 +1,39 @@
+{
+  "residence": [
+    {
+      "id": 1,
+      "residenceName": "kamado",
+      "description": "Belle vue au bord de la m",
+      "price": 230.5,
+      "imageUrl": "assets/img/hotel-room.jpg"
+    },
+    {
+      "id": 2,
+      "residenceName": "Marakech",
+      "description": "Profitez de la vue sur les montagnes",
+      "price": 145.5,
+      "imageUrl": "assets/img/the-interior.jpg"
+    },
+    {
+      "id": 3,
+      "residenceName": "Abudja new look palace",
+      "description": "Séjour complet avec service de voitures",
+      "price": 120.12,
+      "imageUrl": "assets/img/indoors.jpg"
+    },
+    {
+      "id": 4,
+      "residenceName": "Cape town city",
+      "description": "Magnifique cadre pour votre séjour",
+      "price": 135.12,
+      "imageUrl": "assets/img/window.jpg"
+    },
+    {
+      "residenceName": "Buea sweet life",
+      "price": 125,
+      "description": "sdfghjkl",
+      "imageUrl": "assets/img/window.jpg",
+      "id": 5
+    }
+  ]
+}
